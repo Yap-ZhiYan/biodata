@@ -1,1 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yap Zhi Yan 🌈 Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
 
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(120deg, #ffe3f0, #f9f5ff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #c2ffd8, #d4fc79, #ffd3a5);
+      background-size: 1400% 1400%;
+      animation: rainbow 20s ease infinite;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header h1 {
+      font-size: 30px;
+      color: white;
+      text-shadow: 2px 2px #444;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+
+    nav a:hover {
+      color: #2c2c2c;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 40px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      color: #f06292;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #ff4081;
+      background-color: #fff0f7;
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 20px;
+      border-left: 8px solid #ff80ab;
+    }
+
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      list-style: none;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .skills li {
+      background: #fff4f7;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .skills li:hover {
+      transform: scale(1.05);
+      background: #ffe0ec;
+    }
+
+    .timeline {
+      border-left: 5px dotted #ec407a;
+      padding-left: 20px;
+    }
+
+    .timeline div {
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .timeline div::before {
+      content: "🌈";
+      position: absolute;
+      left: -30px;
+      font-size: 20px;
+    }
+
+    .timeline span {
+      font-weight: bold;
+      color: #d81b60;
+    }
+
+    .contact {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.1);
+    }
+
+    .contact p a {
+      color: #c2185b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      background: linear-gradient(to right, #ffd3a5, #fd6585);
+      padding: 20px;
+      font-size: 14px;
+      color: #fff;
+      border-top: 4px dashed #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌈 Yap Zhi Yan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="profile.jpg" alt="Yap Zhi Yan">
+    <h2>Hello! I'm Zhi Yan 🌟</h2>
+    <p>✨ Computer Engineering Student | Colorful Coder | Always Curious ✨</p>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I'm a 3rd-year Computer Engineering student at UniMAP with a CGPA of 3.89 and 5 Dean’s List awards.
+      I enjoy learning new technologies and expressing creativity through code. Currently looking for a
+      10-week internship from 28 July to 5 October 2025. Let’s build something vibrant together! 🎨
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h3>Tech Skills</h3>
+    <ul>
+      <li>C</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>Verilog</li>
+      <li>Assembly</li>
+      <li>LabVIEW</li>
+      <li>Multisim</li>
+      <li>MATLAB</li>
+      <li>Quartus Prime</li>
+      <li>NetBeans</li>
+      <li>Scilab</li>
+      <li>Wireshark</li>
+    </ul>
+  </section>
+
+  <section id="education" class="education">
+    <h3>Education</h3>
+    <div class="timeline">
+      <div>
+        <span>2022 - 2026</span>
+        <p><strong>University Malaysia Perlis (UniMAP)</strong><br>Bachelor of Computer Engineering with Honours</p>
+      </div>
+      <div>
+        <span>MUET</span>
+        <p>Band 4.5</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="education">
+    <h3>Projects</h3>
+    <div class="timeline">
+      <div>
+        <span>Oct 2024 – Feb 2025</span>
+        <p><strong>Battery Charger Sensor</strong><br>LabVIEW and thermistor project for battery safety 🌡️</p>
+      </div>
+      <div>
+        <span>Mar 2024 – Jul 2024</span>
+        <p><strong>Password Security System</strong><br>Intel 8085 + assembly + memory logic 🔐</p>
+      </div>
+      <div>
+        <span>Oct 2023 – Jan 2024</span>
+        <p><strong>Binary Sequence Detector</strong><br>Verilog project using ASM and FPGA 💾</p>
+      </div>
+      <div>
+        <span>Oct 2022 – Jan 2023</span>
+        <p><strong>Employee Payroll System</strong><br>C programming + file handling + salary rules 💼</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <p>
+      📧 Email: <a href="mailto:zhiyan240602@gmail.com">zhiyan240602@gmail.com</a><br>
+      📱 Phone: 010-526 2876<br>
+      🔗 LinkedIn: <a href="https://www.linkedin.com/in/yapzhiyan" target="_blank">linkedin.com/in/yapzhiyan</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Yap Zhi Yan — Coded with 🌈 and ❤️
+  </footer>
+
+</body>
+</html>
